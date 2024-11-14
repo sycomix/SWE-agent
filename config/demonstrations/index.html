@@ -15,8 +15,8 @@
         <link rel="next" href="../env/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+      <link rel="icon" href="../../assets/swe-agent.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -1443,7 +1443,7 @@
 
 <h1 id="changing-the-demonstrations">Changing the demonstrations</h1>
 <p>An important way to show LMs how to use commands and interact with the environment is through providing a demonstration - which is basically a completed <a href="../../usage/trajectories/">trajectory</a> that the LM can learn from.</p>
-<p>For simplicity we only ingest demonstrations in the from of a trajectory file. However, since trajectory files are usually JSON, you can convert them to yaml using the <code>make_demos/convert_traj_to_demo.py</code> script to be more human-readable and easier to edit.</p>
+<p>For simplicity we only ingest demonstrations in the form of a trajectory file. However, since trajectory files are usually JSON, you can convert them to yaml using the <code>make_demos/convert_traj_to_demo.py</code> script to be more human-readable and easier to edit.</p>
 <p>Demo (yaml) files are stored in the <code>make_demos/demos</code> directory by default and consist primarily of the sequence of actions that an LM would need to take to complete a task. It's important that your demo have the proper format to be parsed by SWE-agent and your config.</p>
 <h2 id="manually-creating-a-custom-trajectory">Manually creating a custom trajectory <a name="manual"></a></h2>
 <p>You can manually generate a trajectory by running the agent with <code>--model_name human_thought</code>.
@@ -1469,7 +1469,6 @@ This lets you input, at each turn, the thought (ending with END_THOUGHT) and the
 <li>Inspect the resulting trajectory to ensure it was executed correctly.</li>
 <li>Specify the path to your demonstration in your <a href="../config/">config file</a></li>
 </ol>
-<!-- BEGIN INCLUDE ../_footer.md -->
 <div class="grid cards">
 <ul>
 <li>
@@ -1482,7 +1481,6 @@ This lets you input, at each turn, the thought (ending with END_THOUGHT) and the
 </li>
 </ul>
 </div>
-<!-- END INCLUDE -->
 
 
 
@@ -1502,6 +1500,12 @@ This lets you input, at each turn, the thought (ending with END_THOUGHT) and the
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -1569,10 +1573,10 @@ This lets you input, at each turn, the thought (ending with END_THOUGHT) and the
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "content.action.edit", "navigation.footer", "content.code.copy", "content.footnote.tooltips", "header.autohide", "announce.dismiss"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.top", "content.action.edit", "navigation.footer", "content.code.copy", "content.footnote.tooltips", "header.autohide", "announce.dismiss"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});

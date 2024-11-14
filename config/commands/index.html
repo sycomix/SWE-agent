@@ -15,8 +15,8 @@
         <link rel="next" href="../demonstrations/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+      <link rel="icon" href="../../assets/swe-agent.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -1468,7 +1468,7 @@ To see examples of command implementations, open the <code>.sh</code> and <code>
 <li>The minimal documentation requirements are <code>signature</code> and <code>docstring</code>.</li>
 <li>If you'd like multiple commands to make modifications to a similar body of functions, we recommend using global variables.<ul>
 <li>For instance, in <code>config/commands/default.sh</code>, you'll see we define the <code>CURRENT_LINE</code> variable for the file viewer. This variable is modified across multiple commands, including <code>open</code>, <code>goto</code>, <code>scroll_up</code>, <code>scroll_down</code>, and <code>edit</code>.</li>
-<li>You can also leverage third party libraries (check out how we do linting enabled <code>edit</code> in <code>config/commands/edit_linting.sh</code>).</li>
+<li>You can also third-party libraries (check out how we enable linting in <code>config/commands/edit_linting.sh</code>).</li>
 </ul>
 </li>
 <li>To show effects of the command, print to standard output (i.e. <code>echo</code>). SWE-agent is implemented such that it does not look for a return value from these commands.</li>
@@ -1507,7 +1507,6 @@ To see examples of command implementations, open the <code>.sh</code> and <code>
 <p>Next, run your configuration and see how your agent uses the commands!
 <div class="highlight"><pre><span></span><code>python<span class="w"> </span>run.py<span class="w"> </span>--config_file<span class="w"> </span>config/<span class="o">[</span>your<span class="w"> </span>config<span class="o">]</span>.yaml<span class="w"> </span>...
 </code></pre></div></p>
-<!-- BEGIN INCLUDE ../_footer.md -->
 <div class="grid cards">
 <ul>
 <li>
@@ -1520,7 +1519,6 @@ To see examples of command implementations, open the <code>.sh</code> and <code>
 </li>
 </ul>
 </div>
-<!-- END INCLUDE -->
 
 
 
@@ -1540,6 +1538,12 @@ To see examples of command implementations, open the <code>.sh</code> and <code>
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -1607,10 +1611,10 @@ To see examples of command implementations, open the <code>.sh</code> and <code>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "content.action.edit", "navigation.footer", "content.code.copy", "content.footnote.tooltips", "header.autohide", "announce.dismiss"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.top", "content.action.edit", "navigation.footer", "content.code.copy", "content.footnote.tooltips", "header.autohide", "announce.dismiss"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
